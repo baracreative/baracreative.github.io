@@ -432,7 +432,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-info h2 span {
-  color: #83D0E0;
+  color: #283D50;
   text-decoration: underline;
 }
 
@@ -464,8 +464,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .intro-info .btn-get-started:hover {
   background: none;
-  border-color: #fff;
-  color: #fff;
+  border-color: #83d0e0;
+  color: #83d0e0;
 }
 
 #intro .intro-info .btn-services {
