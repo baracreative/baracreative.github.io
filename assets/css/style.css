@@ -512,6 +512,71 @@ h1, h2, h3, h4, h5, h6 {
   background: #B5D6D8;
 }
 
+.section-bg2 {
+  background: #fff;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background-color: #f5faff;
+  min-height: 40px;
+  margin-top: 80px;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 60px;
+  }
+}
+
+.breadcrumbs h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs h2 {
+    margin: 0 0 10px 0;
+  }
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6c757d;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+  .breadcrumbs ol {
+    display: block;
+  }
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+
 /* About Us Section
 --------------------------------*/
 #about {
@@ -667,13 +732,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #why-us .card {
-  background: #B5D6D8;
+  background: #fff;
   border-color: #B5D6D8;
   border-radius: 10px;
   margin: 0 15px;
   padding: 15px 0;
   text-align: center;
-  color: #fff;
+  color: #343A42;
   transition: 0.3s ease-in-out;
   height: 100%;
 }
@@ -685,7 +750,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #why-us .card:hover {
-  background: #83d0e0;
+  background: #f5c972;
   border-color: #003b7a;
 }
 
@@ -702,7 +767,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #why-us .card p {
   font-size: 15px;
-  color: #fff;
+  color: #343A42;
 }
 
 #why-us .card .readmore {
@@ -866,6 +931,94 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-details-container {
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot.active {
+  background-color: #007bff !important;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 50px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  width: 50%;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .portfolio-details .portfolio-description h2 {
+    width: 100%;
+  }
+  .portfolio-details .portfolio-info {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
 /* Testimonials Section
 --------------------------------*/
 #testimonials {
@@ -907,7 +1060,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #111;
   margin: 0 0 15px 0;
   margin-left: 140px;
 }
@@ -1371,3 +1524,6 @@ h1, h2, h3, h4, h5, h6 {
 #footer .credits a:hover {
   color: #f1f7ff;
 }
+
+
+----
